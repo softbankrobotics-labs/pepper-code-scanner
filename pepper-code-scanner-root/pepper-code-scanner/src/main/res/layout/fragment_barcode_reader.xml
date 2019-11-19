@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:keepScreenOn="true">
+
+    <com.softbankrobotics.dx.peppercodescanner.camera.CameraSourcePreview
+        android:id="@+id/preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.softbankrobotics.dx.peppercodescanner.camera.CameraSourcePreview>
+
+    <com.softbankrobotics.dx.peppercodescanner.ScannerOverlay
+        android:id="@+id/scan_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#44000000"
+        android:visibility="gone"
+        app:line_color="#c3120c"
+        app:line_speed="6"
+        app:line_width="10"
+        app:square_height="250"
+        app:square_width="250" />
+
+</RelativeLayout>

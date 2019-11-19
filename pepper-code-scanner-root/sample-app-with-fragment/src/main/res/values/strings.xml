@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Code Scanner Sample Application (Fragment)</string>
+    <string name="instructions">Please show a barcode or a QR code to the camera</string>
+    <string name="button_text">Start Scanning</string>
+</resources>

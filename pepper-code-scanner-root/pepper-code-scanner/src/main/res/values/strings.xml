@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">barcode</string>
+    <string name="grant_permission">Grant Permission</string>
+    <string name="permission_camera">This app needs camera permission to scan barcode</string>
+    <string name="low_storage_error">Face detector dependencies cannot be downloaded due to low device storage</string>
+    <string name="grant">Grant</string>
+    <string name="cancel">Cancel</string>
+
+</resources>

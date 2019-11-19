@@ -1,0 +1,2 @@
+include ':sample-app-with-intent', ':pepper-code-scanner', ':sample-app-with-fragment'
+rootProject.name='Code Scanner Sample Application'

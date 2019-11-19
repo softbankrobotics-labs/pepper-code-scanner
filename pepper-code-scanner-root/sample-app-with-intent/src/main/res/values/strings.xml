@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Code Scanner Sample Application (Intent)</string>
+    <string name="instructions">Touch my screen to start scanning</string>
+</resources>

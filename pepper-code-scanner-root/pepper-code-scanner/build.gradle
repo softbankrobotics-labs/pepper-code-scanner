@@ -1,0 +1,45 @@
+apply plugin: 'com.android.library'
+
+android {
+    archivesBaseName = "pepper-code-scanner"
+    version = "1.0.0"
+    compileSdkVersion 29
+    defaultConfig {
+        minSdkVersion 23
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        consumerProguardFiles 'consumer-rules.pro'
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        splits {
+            abi {
+                enable true
+                reset()
+                include "armeabi-v7a"
+                universalApk false
+            }
+        }
+
+        libraryVariants.all { variant ->
+            variant.outputs.all { output ->
+                outputFileName = "${archivesBaseName}-${version}.aar"
+            }
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    api 'com.google.android.gms:play-services-vision:19.0.0'
+}
