@@ -7,9 +7,4 @@
         <attr name="line_width" format="integer" />
         <attr name="line_speed" format="integer" />
     </declare-styleable>
-
-    <declare-styleable name="BarcodeReaderFragment">
-        <attr name="auto_focus" format="boolean" />
-        <attr name="use_flash" format="boolean" />
-    </declare-styleable>
 </resources>
