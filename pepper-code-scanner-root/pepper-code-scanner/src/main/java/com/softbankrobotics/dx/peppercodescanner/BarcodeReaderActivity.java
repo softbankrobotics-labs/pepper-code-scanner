@@ -15,9 +15,9 @@ import com.google.android.gms.vision.barcode.Barcode;
 
 public class BarcodeReaderActivity extends AppCompatActivity implements BarcodeReaderFragment.BarcodeReaderListener {
     private static final String TAG = BarcodeReaderActivity.class.getSimpleName();
-    private static final String KEY_SCAN_OVERLAY_VISIBILITY = "key_scan_overlay_visibility";
+    public static final String KEY_SCAN_OVERLAY_VISIBILITY = "key_scan_overlay_visibility";
     public static final String KEY_CAPTURED_BARCODE = "key_captured_barcode";
-    private static final String KEY_CAPTURED_RAW_BARCODE = "key_captured_raw_barcode";
+    public static final String KEY_CAPTURED_RAW_BARCODE = "key_captured_raw_barcode";
     private boolean scanOverlayVisibility = true;
     private BarcodeReaderFragment mBarcodeReaderFragment;
 

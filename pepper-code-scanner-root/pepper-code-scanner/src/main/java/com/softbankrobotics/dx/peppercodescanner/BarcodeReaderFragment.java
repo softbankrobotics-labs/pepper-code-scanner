@@ -10,11 +10,9 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
-import android.content.res.TypedArray;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.Settings;
-import android.util.AttributeSet;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -101,14 +99,6 @@ public class BarcodeReaderFragment extends Fragment implements BarcodeGraphicTra
             mScanOverlay.setVisibility(View.VISIBLE);
         }
         return view;
-    }
-
-
-    @Override
-    public void onInflate(@NonNull Context context, @NonNull AttributeSet attrs, Bundle savedInstanceState) {
-        super.onInflate(context, attrs, savedInstanceState);
-        TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.BarcodeReaderFragment);
-        a.recycle();
     }
 
     @Override
