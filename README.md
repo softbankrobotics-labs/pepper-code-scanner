@@ -2,14 +2,12 @@
 
 This Android Library will help you to scan barcodes and QR codes using the Google Vision library.
 
-## Getting Started
 
+## Getting Started
 
 ### Prerequisites
 
-A robotified project for Pepper with QiSDK. Read the [documentation](https://developer.softbankrobotics.com/pepper-qisdk) if needed.
-
-Barcodes and QR codes.
+Barcodes and QR codes are needed.
 
 ### Running the Sample Application
 
@@ -24,38 +22,9 @@ Full implementation details are available to see in those projects.
 
 ### Installing
 
-#### Using JitPack package repository
-
 [**Follow these instructions**](https://jitpack.io/#softbankrobotics-labs/pepper-code-scanner)
 
 Make sure to replace 'Tag' by the number of the version of the library you want to use.
-
-#### Importing as an .aar file
-
-[**Download the latest compiled .aar**](pepper-code-scanner-root/pepper-code-scanner/compiled/pepper-code-scanner-1.0.0.aar)
-
-In order to implement the library into your own project, you must build and install the .aar library, please follow this steps: 
-
-1.  Build the `pepper-code-scanner` project either with Android Studio, or by running `./gradlew build` The output AAR file is located in **pepper-code-scanner > build > outputs > aar**.
-
-2.  In your robotified project, add the compiled AAR file:
-    * Click File > New > New Module.
-    * Click Import .JAR/.AAR Package then click Next.
-    * Enter the location of the compiled AAR or JAR file then click Finish.
-
-3.    Make sure the library is listed at the top of your `settings.gradle` file:
-```
-include ':app',  ':pepper-code-scanner-1.0.0'
-```
-
-4.  Open the app module's  `build.gradle`  file and add a new line to the  `dependencies`  block as shown in the following snippet:
-```
-dependencies {
-   implementation project(":pepper-code-scanner-1.0.0")
-}
-```
-
-5.  Click  **Sync Project with Gradle Files**.
 
 
 ## Usage
