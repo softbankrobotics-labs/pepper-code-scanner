@@ -16,7 +16,6 @@ class MainActivity : AppCompatActivity() {
         private const val TAG = "MainActivity"
         private const val BARCODE_READER_ACTIVITY_REQUEST = 1208
         private const val KEY_MESSAGE = "key_message"
-        private const val KEY_SCAN_OVERLAY_VISIBILITY = "key_scan_overlay_visibility"
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
