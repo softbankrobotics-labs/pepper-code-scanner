@@ -24,6 +24,14 @@ Full implementation details are available to see in those projects.
 
 ### Installing
 
+#### Using JitPack package repository
+
+[**Follow these instructions**](https://jitpack.io/#softbankrobotics-labs/pepper-code-scanner)
+
+Make sure to replace 'Tag' by the number of the version of the library you want to use.
+
+#### Importing as an .aar file
+
 [**Download the latest compiled .aar**](pepper-code-scanner-root/pepper-code-scanner/compiled/pepper-code-scanner-1.0.0.aar)
 
 In order to implement the library into your own project, you must build and install the .aar library, please follow this steps: 
@@ -54,10 +62,6 @@ dependencies {
 
 *This README assumes some standard setup can be done by the user, such as initialising variables or implementing code in the correct functions. Refer to the Sample Project for full usage code.*
 
-Initialise the QiSDK in the onCreate. If you are unsure how to do this, refer to the QiSDK tutorials [here](https://qisdk.softbankrobotics.com/sdk/doc/pepper-sdk/ch1_gettingstarted/starting_project.html)
-```
-QiSDK.register(this, this)
-```
 You can launch the barcode scanner as an Activity with the following code: 
 ```
 val launchIntent = Intent(this, BarcodeReaderActivity::class.java)
