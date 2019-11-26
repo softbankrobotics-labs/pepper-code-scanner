@@ -14,20 +14,12 @@ android {
 
     buildTypes {
         debug {
-            minifyEnabled true
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
         release {
-            minifyEnabled true
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-        }
-        splits {
-            abi {
-                enable true
-                reset()
-                include "armeabi-v7a"
-                universalApk false
-            }
         }
 
         libraryVariants.all { variant ->
