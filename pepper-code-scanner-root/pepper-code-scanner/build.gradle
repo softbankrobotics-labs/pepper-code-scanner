@@ -1,39 +1,23 @@
 apply plugin: 'com.android.library'
 
 android {
-    archivesBaseName = "pepper-code-scanner"
-    version = "1.0.1"
     compileSdkVersion 29
     defaultConfig {
         minSdkVersion 23
         targetSdkVersion 29
-        versionCode 2
-        versionName "1.0.1"
+        versionCode 3
+        versionName "1.0.2"
         consumerProguardFiles 'consumer-rules.pro'
     }
 
     buildTypes {
         debug {
-            minifyEnabled true
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
         release {
-            minifyEnabled true
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-        }
-        splits {
-            abi {
-                enable true
-                reset()
-                include "armeabi-v7a"
-                universalApk false
-            }
-        }
-
-        libraryVariants.all { variant ->
-            variant.outputs.all { output ->
-                outputFileName = "${archivesBaseName}-${version}.aar"
-            }
         }
     }
 }
