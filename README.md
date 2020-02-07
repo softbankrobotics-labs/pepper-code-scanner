@@ -2,6 +2,11 @@
 
 This Android Library will help you to scan barcodes and QR codes using the Google Vision library.
 
+### Video Demonstration
+
+This video was filmed at SoftBank Robotics Europe, and shows the basic use cases for this library. 
+
+[Watch video on YouTube](https://youtu.be/qSOL2kl2T4w)
 
 ## Getting Started
 
